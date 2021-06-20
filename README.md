@@ -22,8 +22,6 @@ data pull.
 
 ## project-logs
 
-## python-scripts
-
 ## reports
 
 ## source-data
@@ -43,6 +41,14 @@ We used the following searches:
 Note that each of the individual files in this folder should contain the 
 specific search criteria that generated it, and the date and time that 
 the search was executed in the database. 
+
+## workflow-python
+
+Python notebooks and runnable scripts that combine the CSVs from the 
+`source-data` folder, create and identify new DOIs for the `new-doi-lists` 
+folder, and write logs for the `project-logs` folder.
+
+------
 
 ## Bibliography
 

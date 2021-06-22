@@ -34,7 +34,8 @@ def collate_csvs(combine_date, csv_dir, combined_dir, inventory_dir):
     csv_count = 0 
     #some fields contain more characters than the default limit; this increases the field limit
     csv.field_size_limit(150000)
-    csv_list = csv_dir.glob('Dimensions-Publication-2020*.csv')
+    #update the next line based on the CSV files you want/need to query (modified at beginning of 2021)
+    csv_list = csv_dir.glob('Dimensions-Publication-202*.csv')
     
     #create headers for csv; current as of May 2021
     fields = 'Rank,Publication ID,DOI,PMID,PMCID,Title,Abstract,Acknowledgements,Source title,Anthology title,MeSH terms,Publication Date,PubYear,Volume,Issue,Pagination,Open Access,Publication Type,Authors,Authors (Raw Affiliation),Corresponding Author,Authors Affiliations,Research Organizations - standardized,GRID IDs,Country of Research organization,Funder,Times cited,Recent citations,RCR,FCR,Altmetric,Source Linkout,Dimensions URL,FOR (ANZSRC) Categories,Sustainable Development Goals,Publication Date (print),Publication Date (online),Publication Date'

@@ -23,7 +23,9 @@ combine_date = input('Please enter the date for which you are combining the file
 #   update_project_log()
 
 csv_update = collate_csvs(combine_date, csv_dir, combined_dir, inventory_dir)
+print('Ran collation\n',csv_update)
 
 doi_update = identify_new_dois(combine_date, dois_dir, combined_dir)
+print('Identified new DOIs\n',doi_update)
 
 update_project_log(combine_date, csv_update, doi_update, logs_dir)

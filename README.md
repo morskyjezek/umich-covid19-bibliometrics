@@ -60,6 +60,19 @@ data pull.
 
 ## project-logs
 
+This folder contains logs of updates. The main file, `project_log.tsv`, contains a record for each successive update. The log contains these fields for each update: 
+
+* Date_of_update - formatted as YYYYMMDD
+* Collated CSV files - a number, representing the number of CSV files that were included in the update
+* Number of items/articles in update - a number, representing the total number of citations included; this should roughly correspond to the number of lines in all of the CSV files, disregarding header rows
+* Number of DOIs in update - a total number of database object identifiers (DOI) included in the update, this may differ from the toal number of citations since not all citations included a DOI
+* Unique DOIs in update (one or more occurrence) - a total number of unique DOIs in the update, this represents the previous list (total DOIs in the update) with duplicates removed
+* New DOIs in update (only one occurence) - the total number of DOIs that occur only in the most recent update, this is derived by comparing with the previous lists and removing any DOIs that appear more than once
+* Note - a brief text note to explain any major changes that may have affected the update, in cases where there is no change, the field reads "No note recorded"
+* Combined CSV file - the  path, relative to this repository collection, and name of the file that has all of the combined citations (number of lines should correspond to the `Number of items/articles in update` field)
+* CSV Inventory file - the path, relative to this repository collection, and name of the log file that lists all of the CSVs inventoried at each update
+* New DOI file - the path, relative to this repository collection, and name of the list of new DOIs
+
 ## reports
 
 ## source-data

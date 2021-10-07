@@ -75,6 +75,8 @@ This folder contains logs of updates. The main file, `project_log.tsv`, contains
 
 ## reports
 
+At this time, there are no reports.
+
 ## source-data
 
 This folder contains the CSV files that were downloaded from the search database. 
